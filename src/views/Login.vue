@@ -11,30 +11,26 @@ const login = () => {
 </script>
 
 <template>
-  <div class="login">
-    <h2>Login</h2>
-    <form @submit.prevent="login">
-      <div>
-        <label for="username">Usuario:</label>
-        <input id="username" v-model="username" type="text" required>
-      </div>
-      <div>
-        <label for="password">Contraseña:</label>
-        <input id="password" v-model="password" type="password" required>
-      </div>
-      <button type="submit">Iniciar sesión</button>
-    </form>
+  <div class=" flex  justify-center items-center min-h-screen pb-[10%]">
+    <div class="w-full max-w-[400px] bg-white  rounded-lg shadow-md p-4 text-black">
+      <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+      <form @submit.prevent="login" class="space-y-4">
+        <div>
+          <label for="username" class="block mb-1">Usuario:</label>
+          <input id="username" v-model="username" type="text" required class=" text-white w-full px-3 py-2 border rounded-md">
+        </div>
+        <div>
+          <label for="password" class="block mb-1">Contraseña:</label>
+          <input id="password" v-model="password" type="password" required class=" text-white w-full px-3 py-2 border rounded-md">
+        </div>
+        <router-link to="/" class="w-full block">
+          <button type="button" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600">Iniciar sesión</button>
+        </router-link>
+      </form>
+    </div>
   </div>
 </template>
 
 <style scoped>
-.login {
-  max-width: 300px;
-  margin: 0 auto;
-}
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+/* Puedes eliminar los estilos scoped ya que ahora usamos Tailwind */
 </style>

@@ -5,18 +5,8 @@ import Navbar from './components/Navbar.vue';
 <template>
   <!-- <Navbar/> -->
   <Navbar/>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
   <router-view></router-view>
-  <router-link to="/login">
-    <button  class="bg-blue-500 text-white p-2 rounded-md">Ir a Login</button>
-  </router-link>
+
 </template>
 
 <style scoped>

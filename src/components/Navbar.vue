@@ -4,7 +4,7 @@
       <a class="navbar-brand" href="#">Only Waifus</a>
 
       <div class="     text-white" id="navbarSupportedContent">
-        <ul class=" flex text-white">
+        <ul class=" flex text-white gap-4 ">
           <li class=" text-white  ">
             <router-link class="nav-link" to="/">Inicio</router-link>
           </li>
@@ -32,13 +32,13 @@
 }
 
 .navbar-brand {
-  color: rgb(252, 203, 179);
+  color: rgb(242, 99, 209);
   font-weight: bold;
   font-size: 1.5rem;
 }
 
 .nav-link {
-  color: #333;
+  color: #ffffff;
   transition: color 0.2s ease;
 }
 
