@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
+  <!-- <Navbar/> -->
+  <Navbar/>
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
@@ -11,7 +13,10 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <router-view></router-view>
+  <router-link to="/login">
+    <button  class="bg-blue-500 text-white p-2 rounded-md">Ir a Login</button>
+  </router-link>
 </template>
 
 <style scoped>
